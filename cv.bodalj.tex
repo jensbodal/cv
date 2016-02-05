@@ -3,6 +3,11 @@
 
 %% Packages
 \usepackage[scale=0.8, top=3cm, bottom=1cm]{geometry}
+\usepackage{layout}
+
+%% Format
+\setlength{\voffset}{-0.5in}
+\setlength{\textheight}{695pt} 
 
 %% Styling
 \renewcommand*{\namefont}{\fontsize{34}{36}\mdseries\upshape}
@@ -12,6 +17,15 @@
 \renewcommand*{\sectionfont}{\Large\mdseries\upshape}
 \renewcommand*{\subsectionfont}{\large\mdseries\upshape}
 \renewcommand*{\hintfont}{}
+\renewcommand*{\addresssymbol}       {}
+\renewcommand*{\mobilephonesymbol}   {}
+\renewcommand*{\fixedphonesymbol}    {}
+\renewcommand*{\faxphonesymbol}      {}
+\renewcommand*{\emailsymbol}         {}
+\renewcommand*{\homepagesymbol}      {}
+\renewcommand*{\linkedinsocialsymbol}{}
+\renewcommand*{\twittersocialsymbol} {}
+\renewcommand*{\githubsocialsymbol}  {}
 
 %% Personal info
 \firstname{Jens}
@@ -21,12 +35,12 @@
 \address{}{Seattle, WA 98199}
 \email{me@jensbodal.com}
 \homepage{jensbodal.com}
-\quote{Looking for an entry-level position in the software development industry}
+\quote{Fast learning and enthusiastic student with a background in customer service, business, and IT}
 \begin{document}
 \makecvtitle
 
 \section{Education}
-\cventry{}{BS Computer Science (in progress)}{Oregon State University}{Corvallis, OR}{Current GPA:  3.91}{
+\cventry{}{BS Computer Science (in progress)}{Oregon State University}{Corvallis, OR}{\mbox{Current GPA:  3.91}}{
     \begin{itemize}
     \item Courses completed: Programming I \& II, Discrete Math, Data Structures, Assembly, Design, Algorithms, Web Development
     \item Courses in progress: Networking, Databases, Software Engineering I
@@ -39,22 +53,43 @@
 \cventry{2010--2015}{IT Manager}{\textsc{Servco Pacific Insurance}}{Seattle}{}{
     \begin{itemize}
     \item One of the initial five employees in September 2010
-    \item Involved in the decision process for usage and acquisition of Software and Hardware
-    \item Handled the day to day management of our virtualized IT department
-    \item Developed solutions and strategies to improve workflow processes and productivity within all departments
-    \item Developed strategies and plans for various company requirements leading to improved reporting, efficient hardware upgrades, and optimized service upgrades
+    \item Involved in the decision process for usage and acquisition of software and hardware
+    \item Handled the day to day management of virtualized IT department
+    \item Developed solutions, strategies and workflows leading to improved reporting, efficient hardware upgrades, and optimized service upgrades
+    \end{itemize}
+}
+
+\section{Projects}
+\cventry{}{Resume Website}{}{HTML5, PHP, ImageMagick, Apache, GitHub webhooks}{}{
+    \begin{itemize}
+    \item Static HTML5 page built off template
+    \item LaTex resume changes push to GitHub; web server is notified of changes and updates thumbnail image and PDF link for resume
+    \end{itemize}
+}
+\cventry{}{SMTP Tester}{}{Java, SMTP}{}{
+    \begin{itemize}
+    \item Allows test emails to be sent from machine to remote mail servers
+    \item Simple GUI to allow notes to be saved and settings to be changed 
+    \end{itemize}
+}
+\cventry{}{Asheron's Call Plugin}{}{C\#, Decal, MySQL, XML}{}{
+    \begin{itemize}
+    \item Plugin GUI extended from XML templates and hooked to event listeners which trigger actions
+    \item Server population logged to MySQL database with available graph views via PHP-based site
+    \item Impelemented basic route navigation via coordinate-based system
     \end{itemize}
 }
 
 \section{Related skills}
-\cvitem{Familiar}{Python, \textsc{PHP}, \textsc{HTML}, JavaScript, \LaTeX, \textsc{C}, \textsc{C\#}, Linux (including CLI)}
+\cvitem{Frameworks}{NodeJS, Jade, Decal, Express, JQuery}
+\cvitem{Familiar}{Python, \textsc{PHP}, \textsc{HTML}, JavaScript, \LaTeX, \textsc{C}, \textsc{C\#}, Linux (including CLI), MySQL}
 \cvitem{Intermediate}{\textsc{Java}, \textsc{C++}}
 
 \section{Affiliations}
 \cventry{2013--Present}{Board Member}{\textsc{Norwegian American Chamber of Commerce}}{}{}{
     \begin{itemize}
     \item Manage website content and publish new events
-    \item Participate in monthly meetings to help plan events and discuss methods for increasing membership
+    \item Participate in monthly meetings to help plan events and discuss methods for increasing \mbox{membership}
     \end{itemize}
 }
 
