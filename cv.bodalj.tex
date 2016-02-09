@@ -4,6 +4,8 @@
 %% Packages
 \usepackage[scale=0.8, top=3cm, bottom=1cm]{geometry}
 \usepackage{layout}
+\usepackage{hyperref}
+
 
 %% Format
 \setlength{\voffset}{-0.5in}
@@ -50,9 +52,9 @@
 \cventry{}{BA Marketing}{Western Washington University}{Bellingham, WA}{}{}
 
 \section{Projects}
-\cventry{}{Resume Website}{}{HTML5, PHP, ImageMagick, Apache, GitHub webhooks}{}{
+\cventry{}{Resume Website}{}{HTML5, CSS, PHP, ImageMagick, Apache, GitHub webhooks}{}{
     \begin{itemize}
-    \item Static HTML5 page built off template
+    \item Static HTML5 page built off template from \href{http://html5up.net/}{HTML5 UP!}
     \item LaTex resume changes push to GitHub; web server is notified of changes and updates thumbnail image and PDF link for resume
     \end{itemize}
 }
@@ -64,7 +66,7 @@
 }
 \cventry{}{Asheron's Call Plugin}{}{C\#, Decal, MySQL, XML}{}{
     \begin{itemize}
-    \item Plugin GUI extended from XML templates and hooked to event listeners which trigger actions
+    \item Plugin extended from XML templates and hooked to event listeners which trigger in-game actions
     \item Server population logged to MySQL database with available graph views via PHP-based site
     \item Implemented basic route navigation via coordinate-based system
     \end{itemize}
