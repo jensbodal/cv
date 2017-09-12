@@ -33,12 +33,12 @@
 %% Personal info
 \firstname{Jens}
 \lastname{Bodal}
-\title{Computer Science Major}
+\title{Software Engineer}
 \mobile{425.395.4203}
 \address{}{Seattle, WA 98199}
 \email{me@jensbodal.com}
 \homepage{jensbodal.com}
-\quote{Fast learning and enthusiastic student with a background in customer service, business, and IT}
+\quote{Fast learner and enthusiastic developer}
 \begin{document}
 \makecvtitle
 
@@ -48,35 +48,34 @@
 \cventry{}{BA Marketing}{Western Washington University}{Bellingham, WA}{}{}
 
 \section{Experience}
-\cventry{May 2016 - Present}{Software Engineering Intern}{\textsc{McGraw-Hill Education}}{Seattle}{}{
+\cventry{May 2016 - Present}{Software Engineer}{\textsc{McGraw-Hill Education}}{Seattle}{}{
     \begin{itemize}
-    \item Worked as Fullstack engineer using a myriad of web technologies such as AngularJS, Javascript, and PHP while utilizing an Agile development workflow
-    \item Implemented faceted search front-end component using AngularJS, Angular Material, and ui-select
-    \item Implemented RESTful API endpoints 
+    \item Established guidelines and timetable for upgrading an AngularJS application to Angular to leverage the benefits of typescript, AoT compilation, and integration with future projects from other teams.
+    \item Established contract to redefine our definition of done to include proper test cases which helped streamline our continuous-integration workflow.
+    \item Created reusable web components for usage across teams.
+    \item Implemented RESTful and responsive API endpoints using PHP and MySQL for cross-team consumption.
     \end{itemize}
 }
 
 \section{Related skills}
-\cvitem{Frameworks}{AngularJS, Angular Material, Bower, Grunt, Express, Jade, JQuery, NodeJS, SASS, Select2}
-\cvitem{Experienced}{Agile Development, Javascript}
-\cvitem{Intermediate}{\textsc{C++}, \textsc{Git}, Java, Linux (CLI), MySQL}
-\cvitem{Familiar}{\textsc{AJAX}, \textsc{C}, \textsc{C\#}, \textsc{HTML}, \LaTeX, \textsc{PHP}, Python, RESTful APIs, Vagrant}
+\cvitem{Languages}{Javascript, PHP, MySQL, Python}
+\cvitem{Frameworks}{Angular, AngularJS, Angular-CLI, Angular Material, Bower, Grunt, Karma, NodeJS, Protractor, Sass, Webpack}
+\cvitem{Tools}{\textsc{Git}, Linux (CLI), Docker, Agile Development}
 
 \section{Projects}
-\cventry{}{Resume Website}{}{HTML5, CSS, PHP, ImageMagick, Apache, GitHub webhooks}{}{
+\cventry{}{\href{https://github.com/jensbodal/ng1-ng2-hybrid}{Angular/AngularJS Hybrid Demo}}{}{AngularJS, Angular, Javascript}{}{
     \begin{itemize}
-    \item Static HTML5 page built off template from \href{http://html5up.net/}{HTML5 UP!}
-    \item LaTex resume changes push to GitHub; web server is notified via GitHub webhooks and updates thumbnail image and PDF link for resume
+    \item Example of following best practices for upgrading an AngularJS application to Angular leveraging the UpgradeModule
+    \item Presented the demo and the process during Angular-Seattle's August meetup (\href{https://www.youtube.com/watch?v=Yp7LYdbOuwE}{https://goo.gl/zG51R3})
     \end{itemize}
 }
-\cventry{}{SMTP Tester}{}{Java, SMTP}{}{
+\cventry{}{\href{https://github.com/jensbodal/karma-coverage-istanbul-es5-preprocessor}{Istanbul ES5 Preprocessor}}{}{npm, NodeJS, karma}{}{
     \begin{itemize}
-    \item Developed to troubleshoot scanners at work not sending emails
-    \item Allows test emails to be sent from machine to remote mail servers  
-    \item Simple GUI to allow notes to be saved and settings to be changed 
+        \item Karma preprocessor plugin for instrumenting es5 code while using istanbul reporter 
+        \item Allows code coverage reports for unit tests to be rolled up into a single report when running an Angular/AngularJS hybrid application
     \end{itemize}
 }
-\cventry{}{Asheron's Call Plugin}{}{C\#, Decal, MySQL}{}{
+\cventry{}{\href{https://bitbucket.org/jensbodal/ntools/src}{Asheron's Call Plugin}}{}{C\#, Decal, MySQL}{}{
     \begin{itemize}
     \item Plugin hooks to event listeners which trigger in-game actions
     \item Server population logged to MySQL database with available graph views via PHP-based site
@@ -85,12 +84,11 @@
 }
 
 
-
 \section{Affiliations}
-\cventry{2013--Present}{Board Member}{\textsc{Norwegian American Chamber of Commerce}}{}{}{
+\cventry{2017--Present}{Co-Organizer}{\textsc{\href{https://www.meetup.com/Angular-Seattle/}{Angular-Seattle Meetup Group}}}{}{}{
     \begin{itemize}
-    \item Manage website content and publish new events
-    \item Participate in monthly meetings to help plan events and discuss methods for increasing \mbox{membership}
+    \item Help organize monthly meetups: finding speakers, venues, and topics
+    \item Active presenter for either our shorter lightning talks or longer main presentations
     \end{itemize}
 }
 
