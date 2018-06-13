@@ -1,1 +1,3 @@
-[![PDF Status](https://www.sharelatex.com/github/repos/jensbodal/cv/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/jensbodal/cv/builds/latest/output.pdf)
+# Jens Bodal Resume
+
+[![CircleCI](https://circleci.com/gh/jensbodal/cv.svg?style=svg)](https://circleci.com/gh/jensbodal/cv)
