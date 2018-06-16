@@ -1,10 +1,13 @@
 \documentclass[11pt, letterpaper]{moderncv}
 \moderncvtheme{classic}
+% \moderncvstyle{casual}
 
 %% Packages
 %% increase scale to increase text space
 \usepackage[scale=0.85, top=3cm, bottom=1cm]{geometry}
 \usepackage{layout}
+\usepackage{fontawesome}
+
 %%\usepackage{hyperref}
 
 
@@ -34,18 +37,21 @@
 \firstname{Jens}
 \lastname{Bodal}
 \title{Senior Software Engineer}
-\mobile{425.395.4203}
 \address{}{Seattle, WA}
 \email{jensbodal@gmail.com}
-\homepage{}
+%% \homepage{}
+\social[github][https://www.github.com/jensbodal]{\faicon{github-square} jensbodal}
+\social[linkedin][https://www.linkedin.com/in/jensbodal]{\faicon{linkedin-square} jensbodal}
+\social[stackoverflow][https://stackoverflow.com/users/679716/jens-bodal]{\faicon{stack-overflow} jens-bodal}
+
 \quote{Full Stack Developer}
 \begin{document}
 \makecvtitle
 
-\section{Education}
-\cventry{2016}{BS Computer Science}{Oregon State University}{Corvallis, OR}{}{}
-
-\cventry{2008}{BA Marketing}{Western Washington University}{Bellingham, WA}{}{}
+\section{Skills}
+\cvitem{Languages}{Javascript, Typescript, PHP, MySQL, Python}
+\cvitem{Frameworks}{Angular, AngularJS, Angular-CLI, Karma, NodeJS, Protractor, Sass, Webpack}
+\cvitem{Tools}{\textsc{Git}, AWS, Linux (CLI), Docker, CircleCI, Terraform, ng-packagr}
 
 \section{Experience}
 \cventry{May 2016 - Present}{Senior Software Engineer}{\textsc{McGraw-Hill Education}}{Seattle}{}{
@@ -54,14 +60,22 @@
     \item Migrated customer-facing AngularJS application to a hybrid  Angular/AngularJS application to leverage the benefits of typescript, AoT compilation, and integration with future projects from other teams.
     \item Improved team workflows by requiring unit tests and related E2E tests pass before merging into upstream branches.
     \item Created reusable web components in Angular and AngularJS for usage across teams.
-    \item Implemented RESTful and responsive API endpoints using PHP and MySQL for cross-team consumption.
+    \item Implemented resftul and responsive API endpoints using PHP and MySQL for cross-team consumption.
     \end{itemize}
 }
 
-\section{Related skills}
-\cvitem{Languages}{Javascript, Typescript, PHP, MySQL, Python}
-\cvitem{Frameworks}{Angular, AngularJS, Angular-CLI, Karma, NodeJS, Protractor, Sass, Webpack}
-\cvitem{Tools}{\textsc{Git}, AWS, Linux (CLI), Docker, CircleCI, Terraform, ng-packagr}
+\section{Affiliations}
+\cventry{2017--Present}{Co-Organizer}{\textsc{\href{https://www.meetup.com/Angular-Seattle/}{Angular-Seattle Meetup Group}}}{}{}{
+    \begin{itemize}
+    \item Help organize monthly meetups: finding speakers, venues, and topics
+    \item Active presenter for either our shorter lightning talks or longer main presentations
+    \item Responsible for recording and livestreaming of events
+    \end{itemize}
+}
+
+\section{Education}
+\cventry{2016}{BS Computer Science}{Oregon State University}{Corvallis, OR}{}{}
+\cventry{2008}{BA Marketing}{Western Washington University}{Bellingham, WA}{}{}
 
 \section{Projects}
 \cventry{}{\href{https://github.com/jensbodal/ng1-ng2-hybrid}{Angular/AngularJS Hybrid Demo}}{}{AngularJS, Angular, Javascript}{}{
@@ -76,15 +90,4 @@
         \item Allows code coverage reports for unit tests to be rolled up into a single report when running an Angular/AngularJS hybrid application
     \end{itemize}
 }
-
-
-\section{Affiliations}
-\cventry{2017--Present}{Co-Organizer}{\textsc{\href{https://www.meetup.com/Angular-Seattle/}{Angular-Seattle Meetup Group}}}{}{}{
-    \begin{itemize}
-    \item Help organize monthly meetups: finding speakers, venues, and topics
-    \item Active presenter for either our shorter lightning talks or longer main presentations
-    \item Responsible for recording and livestreaming of events
-    \end{itemize}
-}
-
 \end{document}
