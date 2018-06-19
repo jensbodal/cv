@@ -8,12 +8,19 @@
 \usepackage{layout}
 \usepackage{fontawesome}
 
+%% remove periods in cventry
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.}{}{}{}
 %%\usepackage{hyperref}
 
 
 %% Format
 \setlength{\voffset}{-0.5in}
 \setlength{\textheight}{695pt} 
+
+\DeclareFontShape{EU1}{FontAwesome(0)}{bx}{n}{<->ssub * FontAwesome(0)/m/n}{}  
+\DeclareFontShape{EU1}{FontAwesome(0)}{m}{sc}{<->ssub * FontAwesome(0)/m/n}{}  
+\newcommand\prettyhref[3][black]{\href{#2}{\color{#1}\scriptsize\faicon{link} \normalsize\underline{#3}}}
 
 %% Styling
 \renewcommand*{\namefont}{\fontsize{20}{24}\mdseries\upshape}
@@ -54,7 +61,7 @@
 \cvitem{Tools}{\textsc{Git}, AWS, Linux (CLI), Docker, CircleCI, Terraform, ng-packagr}
 
 \section{Work Experience}
-\cventry{May 2016 - Present}{Senior Software Engineer}{\textsc{McGraw-Hill Education}}{Seattle}{}{
+\cventry{May 2016 - Present}{Senior Software Engineer}{\textsc{McGraw-Hill Education}}{Seattle, WA}{}{
     \begin{itemize}
     \item Led the development of automated continuous integration build workflows using CircleCI, terraform, and AWS to improve our production pipeline
     \item Created best practices to seamlessly migrate a customer-facing AngularJS application to a hybrid Angular/AngularJS application, allowing the integration of new cross-team dependencies written in Angular
@@ -65,14 +72,14 @@
 }
 
 \section{Affiliations}
-\cventry{2017--Present}{Co-Organizer}{\textsc{\href{https://www.meetup.com/Angular-Seattle/}{Angular-Seattle Meetup Group}}}{}{}{
+\cventry{2017--Present}{Co-Organizer}{\textsc{\prettyhref{https://www.meetup.com/Angular-Seattle/}{Angular-Seattle Meetup Group}}}{}{}{
     \begin{itemize}
     \item Help organize monthly meetups: finding speakers, venues, and topics
     \item Active presenter for either our shorter lightning talks or longer main presentations
     \item Responsible for recording and livestreaming of events
     \end{itemize}
 }
-\cventry{2018}{Mentor}{\textsc{\href{http://ng-girls.org/}{ng-girls}}}{}{}{
+\cventry{2018}{Mentor}{\textsc{\prettyhref{http://ng-girls.org/}{ng-girls}}}{}{}{
     \begin{itemize}
     \item Volunteered as a mentor at an ng-girls workshop prior to ng-conf
     \item Provided guidance for a group of women looking to learn about web development using Angular
@@ -84,13 +91,13 @@
 \cventry{2008}{BA Marketing}{Western Washington University}{Bellingham, WA}{}{}
 
 \section{Other Relevant Experience}
-\cventry{2017}{\href{https://github.com/jensbodal/ng1-ng2-hybrid}{Angular/AngularJS Hybrid Demo}}{}{AngularJS, Angular, Javascript}{}{
+\cventry{2017}{\prettyhref{https://github.com/jensbodal/ng1-ng2-hybrid}{Angular/AngularJS Hybrid Demo}}{}{AngularJS, Angular, Javascript}{}{
     \begin{itemize}
     \item Example of following best practices for upgrading an AngularJS application to Angular leveraging the UpgradeModule
     \item Presented the demo and the process during Angular-Seattle's August meetup (\href{https://www.youtube.com/watch?v=Yp7LYdbOuwE}{https://goo.gl/zG51R3})
     \end{itemize}
 }
-\cventry{2017}{\href{https://github.com/jensbodal/karma-coverage-istanbul-es5-preprocessor}{Istanbul ES5 Preprocessor}}{}{npm, NodeJS, karma}{}{
+\cventry{2017}{\prettyhref{https://github.com/jensbodal/karma-coverage-istanbul-es5-preprocessor}{Istanbul ES5 Preprocessor}}{}{npm, NodeJS, karma}{}{
     \begin{itemize}
         \item Karma preprocessor plugin for instrumenting es5 code while using istanbul reporter 
         \item Allows code coverage reports for unit tests to be rolled up into a single report when running an Angular/AngularJS hybrid application
